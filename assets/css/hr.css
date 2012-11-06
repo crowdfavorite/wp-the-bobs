@@ -1,0 +1,70 @@
+body {
+	background: #eee;
+}
+.widget {
+}
+.widget-title {
+	font-size: 90%;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.widget ul {
+	list-style: none;
+	margin: 0 0 20px;
+	padding: 0;
+}
+.widget li,
+.widget form {
+	font-size: 80%;
+}
+
+.excerpt {
+	margin-bottom: 10px;
+	position: relative;
+}
+.excerpt header {
+	padding-left: 60px;
+}
+.excerpt.tax-people-null header {
+	padding-left: 0;
+}
+.excerpt header .avatar {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.excerpt header .categories {
+	margin-left: 20px;
+}
+.excerpt.tax-people-null header .categories {
+	margin-left: 0;
+}
+.excerpt header time {
+	color: #999;
+	float: right;
+	font-size: .8em;
+	line-height: 2em;
+}
+.excerpt header h2 {
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-top: 0;
+}
+.excerpt header a,
+.excerpt header a:visited {
+	color: #666;
+	text-decoration: none;
+}
+.excerpt header a:hover,
+.excerpt header a:visited:hover {
+	text-decoration: underline;
+}
+.excerpt header h2 a,
+.excerpt header h2 a:visited {
+	color: #333;
+	text-decoration: underline;
+}
+
+ul.dc_documents {
+	padding-left: 0;
+}

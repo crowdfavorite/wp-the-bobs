@@ -1,0 +1,6 @@
+[submodule "carrington-core"]
+	path = carrington-core
+	url = git@github.com:crowdfavorite/wp-carrington-core.git
+[submodule "plugins/documents-shortcode"]
+	path = plugins/documents-shortcode
+	url = git@github.com:alexkingorg/documents-shortcode.git
