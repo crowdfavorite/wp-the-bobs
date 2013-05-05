@@ -92,14 +92,13 @@ function cfhr_admin_head_edit() {
 #cfhr-tax-popover {
 	background: #fff;
 	border: 1px solid #fff;
-	-moz-box-shadow: 0 2px 3px 1px #ccc;
-	-webkit-box-shadow: 0 2px 3px 1px #ccc;
-	box-shadow: 0 2px 3px 1px #ccc;
+	-moz-box-shadow: 0 2px 3px 2px #ccc;
+	-webkit-box-shadow: 0 2px 3px 2px #ccc;
+	box-shadow: 0 2px 3px 2px #ccc;
 	display: none;
 	height: 300px;
-	padding: 10px;
 	position: absolute;
-	width: 200px;
+	width: 600px;
 }
 #cfhr-tax-popover .before {
 	position: absolute;
@@ -114,15 +113,6 @@ function cfhr_admin_head_edit() {
 	bottom: 9px;
 	top: auto;
 }
-#cfhr-tax-popover li {
-	list-style: none;
-}
-#cfhr-tax-popover p {
-	bottom: 0px;
-	position: absolute;
-	text-align: center;
-	width: 190px;
-}
 #cfhr-tax-popover .loading {
 	background: #fff url(<?php echo admin_url('images/loading.gif'); ?>) center center no-repeat;
 	height: 300px;
@@ -130,6 +120,32 @@ function cfhr_admin_head_edit() {
 	position: absolute;
 	top: 0;
 	width: 220px;
+}
+#cfhr-tax-popover .tax {
+	float: left;
+	margin: 10px;
+	width: 180px;
+}
+#cfhr-tax-popover .tax li {
+	list-style: none;
+}
+#cfhr-tax-popover .tax p {
+	bottom: 0px;
+	position: absolute;
+	text-align: center;
+	width: 180px;
+}
+#cfhr-tax-popover .content {
+	clear: right;
+	float: left;
+	height: 290px;
+	overflow: auto;
+	padding: 0 0 10px;
+	width: 400px;
+}
+#cfhr-tax-popover .content h2.title {
+	font-size: 1.2em;
+	line-height: 140%;
 }
 </style>
 <script type="text/javascript">
@@ -193,6 +209,10 @@ function cfhr_tax_popover_shell() {
 add_action('admin_footer-edit.php', 'cfhr_tax_popover_shell');
 
 function cfhr_tax_popover($post_id = 0) {
+	$post = get_post($post_id);
+?>
+<div class="tax">
+<?php
 	$people = wp_get_object_terms($post_id, 'people');
 	$args = array(
 		'hide_empty' => 0,
@@ -219,6 +239,11 @@ function cfhr_tax_popover($post_id = 0) {
 ?>
 	</ul>
 	<p><a href="#" class="submit button-primary" data-post-id="<?php echo $post_id; ?>"><?php _e('Save', 'cfhr'); ?></a></p>
+</div>
+<div class="content">
+	<h2 class="title"><?php echo esc_html($post->post_title); ?></h2>
+	<?php echo wpautop($post->post_content); ?>
+</div>
 <?php
 }
 
