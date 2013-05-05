@@ -157,6 +157,8 @@ include('functions/admin.php');
 include('functions/architecture.php');
 include('functions/nav.php');
 
+include('plugins/cf-taxonomy-filter/taxonomy-filter.php');
+
 function cfhr_upload_mimes($types) {
 	$types['md'] = 'text/plain';
 	return $types;
@@ -167,4 +169,9 @@ function cfhr_dc_documents_shortcode($url) {
 	return get_template_directory_uri().'/plugins/documents-shortcode/dc_documents.css';
 }
 add_filter('dc_document_shortcode_css_url', 'cfhr_dc_documents_shortcode');
+
+function cfhr_login_duration() {
+    return 2592000; // 30 * 24 * 60 * 60 = 30 days
+}
+add_filter('auth_cookie_expiration', 'cfhr_login_duration');
 

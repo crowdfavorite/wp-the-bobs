@@ -1,2 +1,2 @@
-# HR Log Theme
+# The Bobs - an HR logging app
 

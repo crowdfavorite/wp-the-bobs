@@ -68,3 +68,70 @@ body {
 ul.dc_documents {
 	padding-left: 0;
 }
+
+  .filter {
+    display: none;
+    background: #ddd;
+    padding: 15px; }
+    .filter select {
+      width: 18%; }
+    .filter .cftf-options,
+    .filter .cftf-dates {
+      margin-left: 55px;
+      margin-bottom: 10px; }
+      .filter .cftf-options .label,
+      .filter .cftf-dates .label {
+        display: inline-block;
+        float: left;
+        height: 25px;
+        line-height: 25px;
+        padding-top: 3px;
+        position: relative;
+        width: 100px; }
+    .filter .cftf-submit {
+      padding: 3px 0 0 155px; }
+    .filter .chzn-container {
+      margin-right: 10px;
+      min-width: 180px; }
+      .filter .chzn-container .chzn-drop {
+        -moz-box-shadow: none;
+        /* FF3.5+ */
+        -webkit-box-shadow: none;
+        /* Saf3+, Chrome */
+        box-shadow: none;
+        /* Standard. Opera 10.5, IE9+ */
+        min-width: 178px; }
+      .filter .chzn-container .chzn-choices input {
+        min-width: 180px; }
+      .filter .chzn-container .chzn-results .highlighted {
+        background: #222222; }
+    .filter .chzn-container-multi .chzn-choices {
+      background: #fff; }
+      .filter .chzn-container-multi .chzn-choices .search-choice {
+        -moz-border-radius: 0;
+        /* FF1+ */
+        -webkit-border-radius: 0;
+        /* Saf3+, Chrome */
+        border-radius: 0;
+        /* Standard. IE9+ */
+        /**
+         * @bugfix border-radius background bleed
+         * @see http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed
+         */
+        -webkit-background-clip: padding-box; }
+    .filter .chzn-container-active .chzn-single,
+    .filter .chzn-container-active .chzn-choices {
+      border-color: #aaa;
+      -moz-box-shadow: none;
+      /* FF3.5+ */
+      -webkit-box-shadow: none;
+      /* Saf3+, Chrome */
+      box-shadow: none;
+      /* Standard. Opera 10.5, IE9+ */ }
+    .filter .cftf-date {
+      border: 1px solid #aaa;
+      padding: 6px 5px;
+      width: 150px; }
+    .filter .cftf-date-sep {
+      color: #999;
+      padding: 0 2px; }

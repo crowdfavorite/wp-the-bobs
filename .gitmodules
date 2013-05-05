@@ -4,3 +4,9 @@
 [submodule "plugins/documents-shortcode"]
 	path = plugins/documents-shortcode
 	url = git@github.com:alexkingorg/documents-shortcode.git
+[submodule "plugins/cf-taxonomy-filter"]
+	path = plugins/cf-taxonomy-filter
+	url = git@github.com:crowdfavorite/wp-taxonomy-filter.git
+[submodule "assets/js/jquery-popover"]
+	path = assets/js/jquery-popover
+	url = git@github.com:crowdfavorite/jquery-popover.git

@@ -38,3 +38,49 @@ $title_description = (is_home() && !empty($blog_desc) ? ' - '.$blog_desc : '');
 <div class="container grid">
 
 	<div id="main" class="clearfix">
+	
+		<div class="filter">
+<?php
+
+$args = array(
+	'taxonomies' => array(
+		'people' => array(
+		),
+		'category' => array(
+		),
+	),
+	'date' => true
+);
+
+CF_Taxonomy_Filter::start_form();
+
+echo '<div class="cftf-options"><span class="label">'.__('Options', 'capsule').'</span>';
+
+foreach ($args['taxonomies'] as $taxonomy => $tax_args) {
+	if (is_array($args)) {
+		CF_Taxonomy_Filter::tax_filter($taxonomy, $tax_args);
+	}
+	// Just passed in taxonomy name with no options
+	else {
+		CF_Taxonomy_Filter::tax_filter($args);
+	}
+}
+
+CF_Taxonomy_Filter::author_select();
+
+echo '</div>';
+echo '<div class="cftf-dates"><span class="label">'.__('Date Range', 'capsule').'</span>';
+
+CF_Taxonomy_Filter::date_filter();
+
+echo '</div>';
+echo '<div class="cftf-submit">';
+
+CF_Taxonomy_Filter::submit_button();
+
+echo '</div>';
+
+CF_Taxonomy_Filter::end_form();
+
+?>
+		</div>
