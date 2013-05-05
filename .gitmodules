@@ -10,3 +10,9 @@
 [submodule "assets/js/jquery-popover"]
 	path = assets/js/jquery-popover
 	url = git@github.com:crowdfavorite/jquery-popover.git
+[submodule "plugins/cf-post-meta"]
+	path = plugins/cf-post-meta
+	url = git@git.crowdfave.org:wp-plugin/cf-post-meta.git
+[submodule "plugins/cf-tax-post-binding"]
+	path = plugins/cf-tax-post-binding
+	url = git@github.com:crowdfavorite/wp-tax-post-binding.git
