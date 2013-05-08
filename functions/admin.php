@@ -91,7 +91,7 @@ function cfhr_admin_head_edit() {
 }
 #cfhr-tax-popover {
 	background: #fff;
-	border: 1px solid #fff;
+	border: 1px solid #ddd;
 	-moz-box-shadow: 0 2px 3px 2px #ccc;
 	-webkit-box-shadow: 0 2px 3px 2px #ccc;
 	box-shadow: 0 2px 3px 2px #ccc;
@@ -101,16 +101,25 @@ function cfhr_admin_head_edit() {
 	width: 600px;
 }
 #cfhr-tax-popover .before {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-width: 0 0 1px 1px;
+	height: 10px;
+	left: -7px;
 	position: absolute;
-	top: 13px;
-	left: -11px;
-	border-right: 10px solid #fff;
-	border-right-color: inherit; 
-	border-bottom: 10px solid transparent;
-	border-top: 10px solid transparent; 
+	top: 18px;
+	width: 10px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	/* Firefox */
+	-moz-transform: rotate(45deg);
+	/* IE */
+	-ms-transform: rotate(45deg);
+	/* Opera */
+	-o-transform: rotate(45deg);
 }
 #cfhr-tax-popover.flopped-y .before {
-	bottom: 9px;
+	bottom: 13px;
 	top: auto;
 }
 #cfhr-tax-popover .loading {
