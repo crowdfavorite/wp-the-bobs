@@ -92,9 +92,9 @@ function cfhr_admin_head_edit() {
 #cfhr-tax-popover {
 	background: #fff;
 	border: 1px solid #ddd;
-	-moz-box-shadow: 0 2px 3px 2px #ccc;
-	-webkit-box-shadow: 0 2px 3px 2px #ccc;
-	box-shadow: 0 2px 3px 2px #ccc;
+	-moz-box-shadow: 0 2px 3px 1px #ccc;
+	-webkit-box-shadow: 0 2px 3px 1px #ccc;
+	box-shadow: 0 2px 3px 1px #ccc;
 	display: none;
 	height: 300px;
 	position: absolute;
