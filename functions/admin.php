@@ -67,7 +67,10 @@ function cfhr_admin_head_edit() {
 ?>
 <style>
 .fixed .column-widget {
-	width: 2.2em;
+	width: 1.5em;
+}
+.fixed td.column-widget {
+	background: transparent;
 }
 .fixed .column-widget a {
 	background-image: url("images/menu.png");
@@ -78,6 +81,11 @@ function cfhr_admin_head_edit() {
 	overflow: hidden;
 	text-indent: -9999px;
 	width: 16px;
+}
+.fixed .column-widget a,
+.fixed .column-widget a:focus,
+.fixed .column-widget a:active {
+	outline: 0;
 }
 .fixed .column-people {
 	width: 15%;
