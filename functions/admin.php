@@ -104,7 +104,7 @@ function cfhr_admin_head_edit() {
 	-webkit-box-shadow: 0 2px 3px 1px #ccc;
 	box-shadow: 0 2px 3px 1px #ccc;
 	display: none;
-	height: 300px;
+	height: 400px;
 	position: absolute;
 	width: 600px;
 }
@@ -132,7 +132,7 @@ function cfhr_admin_head_edit() {
 }
 #cfhr-tax-popover .loading {
 	background: #fff url(<?php echo admin_url('images/loading.gif'); ?>) center center no-repeat;
-	height: 300px;
+	height: 400px;
 	left: 0;
 	position: absolute;
 	top: 0;
@@ -155,7 +155,7 @@ function cfhr_admin_head_edit() {
 #cfhr-tax-popover .content {
 	clear: right;
 	float: left;
-	height: 290px;
+	height: 390px;
 	overflow: auto;
 	padding: 0 0 10px;
 	width: 400px;
